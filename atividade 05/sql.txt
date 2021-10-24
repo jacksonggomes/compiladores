@@ -1,0 +1,51 @@
+SELECT * FROM TABELA;
+
+SELECT CAMPO1, CAMPO2 FROM TABELA;
+
+SELECT T1.CAMPO1, T2.CAMPO2 FROM TABELA AS T1, TABELA2 AS T2
+ORDER BY T1.CAMPO1 ASC, T2.CAMPO2 DESC;
+
+SELECT supplier_city, supplier_state FROM suppliers
+WHERE T1.CAMPO1 = VALOR AND NOT T2.CAMPO2 = VALOR2 + 2 - (3 * 7) AND 2 = (SELECT * FROM TABELA)
+ORDER BY supplier_city, supplier_state ASC;
+
+SELECT supplier_city FROM suppliers
+ORDER BY supplier_city;
+
+SELECT supplier_city FROM suppliers
+ORDER BY supplier_city ASC;
+
+SELECT supplier_city FROM suppliers
+ORDER BY supplier_city DESC;
+
+SELECT supplier_city, supplier_state FROM suppliers
+ORDER BY supplier_city DESC, supplier_state ASC;
+
+
+SELECT column_name,column_name
+FROM table_name;
+SELECT * FROM table_name;
+SELECT CustomerName,City FROM Customers;
+SELECT * FROM Customers;
+
+SELECT * FROM Customers
+WHERE Country='Mexico';
+SELECT * FROM Customers
+WHERE CustomerID=1;
+
+SELECT * FROM Customers
+WHERE Country='Germany'
+AND City='Berlin';
+SELECT * FROM Customers
+WHERE City='Berlin'
+OR City='München';
+SELECT * FROM Customers
+WHERE Country='Germany'
+AND (City='Berlin' OR City='München');
+
+SELECT * FROM Customers
+ORDER BY Country;
+SELECT * FROM Customers
+ORDER BY Country DESC;
+SELECT * FROM Customers
+ORDER BY Country,CustomerName;
