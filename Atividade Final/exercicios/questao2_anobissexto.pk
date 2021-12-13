@@ -1,0 +1,9 @@
+int ano
+ano = 2021
+if (((ano % 4) == 0 && (ano % 100) != 0) || ((ano % 400) ==0 )):
+    print("Bissexto !")
+end
+else :
+    print("Nao e Bissexto!")
+end
+    
